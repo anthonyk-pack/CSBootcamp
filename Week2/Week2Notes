@@ -1,0 +1,5 @@
+Notes for the labs this week;
+
+Project 2:
+-Had to install Python
+-Deployment wouldnt work to EU-West data centre so changed to US-EAST-1 for testing the bucket deployment
