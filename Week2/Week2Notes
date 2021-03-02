@@ -1,5 +1,14 @@
-Notes for the labs this week;
+# Notes for the labs this week;
 
-Project 2:
+## Project 2:
 -Had to install Python
--Deployment wouldnt work to EU-West data centre so changed to US-EAST-1 for testing the bucket deployment
+-Deployment didnt work to EU-West data centre so changed to US-EAST-1 for testing the bucket deployment which worked fine
+
+## Project 3:
+-Had to install the AZ module (Install-Module -Name AZ) and import it (Import-Module AZ)
+-Connect to AZ Account (Connect-AzAccount)
+
+## Project 4:
+pip install pylint [Install the linting tool for Python]
+-Installed fine but got an error when running pylint
+    - Had to reinstall pylint with the force command (pip install pylint --force)
