@@ -1,8 +1,8 @@
 function New-ResourceGroup {
-    [cmdletbinding()]
+    [cmdletbinding(SupportsShouldProcess)]
 
     param (
-        [parameter(Mandatory)]    
+        [parameter(Mandatory)]
         [string]$rgName,
 
         [parameter(Mandatory)]
@@ -12,7 +12,8 @@ function New-ResourceGroup {
         'Name' = $rgName
         'Location' = $location
     }
-    
-    New-AZResourceGroup @params
+    If ($PSCmdlet.ShouldProcess('location')) {
+        New-AZResourceGroup @params
+    }
 }
 # Run selection then run the function : New-ResourceGroup -rgName CloudSkillsTest -location UKSouth
